@@ -1,0 +1,68 @@
+:root {
+    --bg-color: rgb(56, 56, 56);
+    --accent-color: rgb(182, 0, 154);
+    --accent-color-hover: rgb(255, 0, 217);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: white;
+}
+#chat {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+#message-form {
+    display: flex;
+}
+#user-input {
+    flex: 3;
+    margin-right: 10px;
+    background-color: var(--bg-color);
+    border: 1px solid white;
+    box-shadow: none;
+    height: 40px;
+    color: white;
+    background: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#user-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+#m {
+    flex: 9;
+    background-color: var(--bg-color);
+    border: 1px solid white;
+    box-shadow: none;
+    height: 40px;
+    color: white;
+    background: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#m:focus {
+    box-shadow: none;
+    outline: none;
+}
+#send {
+    flex: 1;
+    border: 1px solid white;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+}
+#send:hover {
+    background-color: var(--accent-color-hover);
+}

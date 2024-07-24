@@ -4,62 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Real-time Group Chat</title>
-        <style>
-            :root {
-                --bg-color: rgb(56, 56, 56);
-            }
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 20px;
-                background-color: var(--bg-color);
-                color: white;
-            }
-            #chat {
-                height: 400px;
-                overflow-y: scroll;
-                border: 1px solid white;
-                padding: 20px;
-                margin-bottom: 20px;
-                border-radius: 20px;
-            }
-            #message-form {
-                display: flex;
-            }
-            #user-input {
-                flex: 1;
-                margin-right: 10px;
-                background-color: var(--bg-color);
-                border: 1px solid white;
-                box-shadow: none;
-                height: 40px;
-                color: white;
-                background: none;
-                font-size: 16px;
-                padding: 10px;
-                border-radius: 20px;
-            }
-            #user-input:focus {
-                box-shadow: none;
-                outline: none;
-            }
-            #m {
-                flex: 3;
-                background-color: var(--bg-color);
-                border: 1px solid white;
-                box-shadow: none;
-                height: 40px;
-                color: white;
-                background: none;
-                font-size: 16px;
-                padding: 10px;
-                border-radius: 20px;
-            }
-            #m:focus {
-                box-shadow: none;
-                outline: none;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div id="chat"></div>
@@ -76,7 +21,7 @@
                 placeholder="Type a message..."
                 required
             />
-            <button>Send</button>
+            <button id="send">Send</button>
         </form>
 
         <script src="/socket.io/socket.io.js"></script>
